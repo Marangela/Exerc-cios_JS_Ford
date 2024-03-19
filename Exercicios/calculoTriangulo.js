@@ -17,3 +17,17 @@
 //saida de dados
 // = informar se o triangulo é equilátero, escaleno ou isócele
 // = motrar a saída do programa na console
+
+
+
+const medidaA = 60
+const medidaB = 60
+const medidaC = 20
+
+if (medidaA == medidaB && medidaC == medidaB) {
+    console.log("triangulo equilatero");
+} else if (medidaA == medidaB || medidaA == medidaC || medidaC == medidaB) {
+    console.log("triangulo isósceles");
+} else if (medidaA != medidaB || medidaA != medidaC || medidaC != medidaB) {
+    console.log("triangulo escaleno");
+}
