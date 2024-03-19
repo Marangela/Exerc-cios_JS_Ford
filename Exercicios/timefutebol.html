@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoFutebol</title>
+</head>
+
+<body>
+    <h1>Resultado de jogo</h1>
+    <script>
+        const time1 = prompt("Informe o nome do time 1");
+        const time2 = prompt("Informe o nome do time 2");
+        const goltime1 = parseInt(prompt("Informe a quantidade de gols do time 1"));
+        const goltime2 = parseInt(prompt("Informe a quantidade de gols do time 2"));
+        
+        if (goltime1 > goltime2) {
+            alert(`O time ${time1}venceu o ${time2}`)
+        } else if (goltime1 < goltime2) {
+            alert(`O time ${time2} venceu o ${time1}`)
+        }
+        else if (goltime1 = goltime2) {
+            alert(`Os times ${time1}e ${time2}empataram.`)
+        }
+
+
+    </script>
+</body>
+
+</html>
