@@ -17,3 +17,33 @@
 // = se for cliente não haverá desconto
 // = se for funcionário terá 10% de desconto
 // = se for vip terá 5% de desconto
+const valorCompra = parseFloat(prompt("Qual o valor da compra"))
+let pergunta = parseInt(prompt("Digite qual tipo de cliente voce é:\n 1- Cliente 2- Funcionario \n 3 - Vip "))
+
+switch (pergunta) {
+
+    case 1:
+
+        alert("Voce e um cliente infelizmente, voce nao possui desconto")
+        alert(`O valor total da compra é de:${valorCompra}`)
+
+        break
+
+    case 2:
+
+    alert ("Voce é um funcionario, Parabens tem direito a 10% de desconto")
+    Desconto = (10/100)*valorCompra;
+    alert (`o valor total da sua compra é de ${Funcionario} voce tera R$ ${Desconto}`)
+        
+        break
+    case 3:
+        alert ("Voce é um Vip, Parabens tem direito a 5% de desconto")
+        Desconto = (5/100)*valorCompra;
+        alert (`o valor total da sua compra é de ${Vip} voce tera R$ ${Desconto}`)
+        
+    break
+    default:
+         (" Erro so executar o programa: tente novamente")
+         break
+        
+}

@@ -26,3 +26,23 @@
 
 //saida de dados
 // = mostrar a porcentagem de desconto se for alcool ou se for gasolina
+let tipo = prompt ("Qual tipo de combustivel voce deseja:\n A-Alcool G - Gasolina")
+switch(tipo){
+    case A:
+        let quantidade = parseInt(prompt( " Quantos litros de Alcool voce deseja"))
+        var valor = 4.90
+
+        if(quantidade == 20){
+            var total = quantidade * valor
+            var desconto = total * 0.04
+            var comDesconto = total - desconto
+
+            alert ( `Voce tem direito a 4% de desconto em compras ate 20 litros`)
+            alert (`O valor com desconto é de ${comDesconto} voce economizou ${desconto}`)
+            
+         }else{
+            var desconto = total * 0.05
+            var comDesconto = total - desconto
+            alert (`O valor com descponto acima de 20 litros é de ${comDesconto}`)
+         }
+}
