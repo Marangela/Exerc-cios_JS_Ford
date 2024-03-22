@@ -7,7 +7,26 @@
 </head>
 <body>
 
-    <script src="postoGasolina.js"></script>
-    
+    <script>
+        const nomeProduto= prompt ("Digite a descricao do produto")
+        const quantidadeProduto = parseInt (prompt ("Digite a quantidade adquirida"))
+        const precoUnitario = parseInt (prompt (" Digite o preco unitario do produto"));
+        let total = quantidadeProduto * precoUnitario;
+        let desconto ;
+        let totalAPagar = total - desconto;
+        if (quantidadeProduto <=5){
+            desconto = total - 0.02;
+            alert (` O valor a ser pago do (a) ${nomeProduto} sera ${desconto}`)
+        }
+        else if (quantidadeProduto <= 10){
+            desconto = total * 0.03;
+            alert (` O valor a ser pago do(a)${nomeProduto} sera $ : ${desconto}`)
+        }
+        else{
+            desconto = total * 0.05
+            
+        }
+    </script>
+        
 </body>
 </html>
